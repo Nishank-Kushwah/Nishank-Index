@@ -1,0 +1,36 @@
+        body{
+            display: flex;
+            justify-content: start;
+            height: 100vh;
+            margin: 0;
+            padding: 0;            
+        }
+        .navbar{
+            display: flex;
+            justify-content: end;
+            height: 90px;
+            width: 100%;
+            background-color: gray;
+        }
+        .right{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+             width: 140px;
+            margin-right: 20px;
+        }
+        .one{
+            height: 30px;
+            width: 30px;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: transparent;
+            box-shadow: 0px 0px 5px 5px black;
+        }
+         #one-id{
+                width: 40px;
+            }
+            #two-id{
+                border-radius: 50%;
+
+            }

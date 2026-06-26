@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightblue;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px 5px black;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        const div = document.querySelector('div');
+        const body = document.querySelector('body');
+        var check = true;
+        div.addEventListener('click', () => {
+            if (check) {
+                body.style.backgroundColor = 'beige';
+                div.style.backgroundColor = 'black';
+                div.style.boxShadow = '0px 0px 10px 5px green';
+            } else {
+                body.style.backgroundColor = 'brown';
+                div.style.backgroundColor = 'gray';
+                div.style.boxShadow = '0px 0px 10px 5px yellow';
+            }
+            check = !check;
+        });
+    </script>
+</body>
+</html>
